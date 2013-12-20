@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+<!--        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />-->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <script type="text/javascript" src="phonegap.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/horoscop.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css" />	
+		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.0-rc.1.min.js"></script>	        
+		<script type="text/javascript" src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />		
+        <title>Horoscop</title>
+    </head>
+    <body>
+
+
+
+        
+		<div data-role="page" data-theme="a" id=page >
+			<div data-role="header" data-position="inline">
+				<h1>HOROSCOP</h1>
+			</div>
+			
+			<div data-role="content" data-theme="a" class="scrollable">
+		    <div class="content-primary" >	
+				<ul data-role="listview" >
+					<li ><a href="page.php?z=1" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/berbec.png" />
+						<h3 z=1>Berbec</h3>
+						<p>21 martie – 20 aprilie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=2" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/taur.png" />
+						<h3 z=2>Taur</h3>
+						<p>21 aprilie – 20 mai</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=3" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/gemeni.png" />
+						<h3  z=3>Gemeni</h3>
+						<p>21 mai – 21 iunie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=4" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/rac.png" />
+						<h3 z=4>Rac</h3>
+						<p>22 iunie – 22 iulie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=5" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/leu.png" />
+						<h3 z=5>Leu</h3>
+						<p>23 iulie – 22 august</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=6" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/fecioara.png" />
+						<h3 z=6>Fecioara</h3>
+						<p>23 august – 22 septembrie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=7" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/balanta.png" />
+						<h3 z=7>Balanta</h3>
+						<p>23 septembrie – 22 octombrie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=8" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/scorpion.png" />
+						<h3 z=8>Scorpion</h3>
+						<p>23 octombrie – 21 noiembrie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=9" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/sagetator.png" />
+						<h3 z=9>Sagetator</h3>
+						<p>22 noiembrie – 20 decembrie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=10" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/capricorn.png" />
+						<h3 z=10>Capricorn</h3>
+						<p>21 decembrie – 19 ianuarie</p>
+						<p class="h_content"></p>
+					</a></li>
+					<li ><a href="page.php?z=11" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/varsator.png" />
+						<h3 z=11>Varsator</h3>
+						<p>20 ianuarie – 18 februarie</p>
+						<p class="h_content"></p>
+					</a></li>			
+					<li ><a href="page.php?z=12" class="h_link" data-role="button" data-transition="slide" data-inline="true">
+						<img src="img/pesti.png" />
+						<h3 z=12>Pesti</h3>
+						<p>19 februarie – 20 martie</p>
+						<p class="h_content"></p>
+					</a></li>
+				</ul>
+			</div><!--/content-primary -->	
+			
+		<!--
+			<p>Your theme was successfully downloaded</p>
+				<label for="slider1">Input slider:</label>
+				<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a" />
+				<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+				<legend>Cache settings:</legend>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
+				<label for="radio-choice-a1">On</label>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
+				<label for="radio-choice-b1">Off</label>
+				</fieldset>
+		-->		
+
+		
+			
+			</div>	 <!--role content-->
+		
+			<div  id="deviceinfo">
+Loading device properties...
+			</div>
+					
+			<div data-role="footer">
+			    <h1>Setari</h1>
+  			</div>
+			
+		</div>        
+        
+        
+    </body>
+</html>
